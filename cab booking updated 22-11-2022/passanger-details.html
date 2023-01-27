@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MONTREAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+
+    <!-- select css -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+
+    <!-- MAin CSs -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header start -->
+        <div class="header-outer">
+            <div class="header">
+                <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fas fa-bars"
+                        aria-hidden="true"></i></a>
+
+                <a id="toggle_btn" class="float-left" href="javascript:void(0);">
+                    <img src="assets/img/sidebar/icon-21.png" alt="">
+                </a>
+                <!-- Search-->
+                <ul class="nav float-left">
+
+                    <li>
+                        <a href="index.html" class="mobile-logo d-md-block d-lg-none d-block"><img
+                                src="assets/logo/logo_mtl.png" alt="" width="30" height="30"></a>
+                    </li>
+                </ul>
+                <!--/Search-->
+
+                <ul class="nav user-menu float-right">
+
+                    <li class="nav-item dropdown has-arrow">
+                        <a href="#" class=" nav-link user-link" data-toggle="dropdown">
+                            <span class="user-img"><img class="rounded-circle" src="assets/img/user-06.jpg" width="30"
+                                    alt="Admin">
+                                <span class="status online"></span></span>
+                            <span>Admin</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="my-profile.html">My Profile</a>
+                            <a class="dropdown-item" href="login.html">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="dropdown mobile-user-menu float-right"> <!-- mobile menu -->
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
+                            class="fas fa-ellipsis-v"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="my-profile.html">My Profile</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Header -->
+
+        <!-- sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <div class="header-left">
+                        <a href="index.html" class="logo">
+                            <img src="assets/logo/logo_mtl.png" width="40" height="40" alt="">
+                            <span class="text-uppercase">montreal</span>
+                        </a>
+                    </div>
+                    <ul class="sidebar-ul">
+                        <li class="menu-title">Menu</li>
+                        <li class="active">
+                            <a href="index.html"><img src="assets/img/sidebar/icon-1.png"
+                                    alt="icon"><span>Dashboard</span></a>
+                        </li>
+                        <li>
+                            <a href="driver-details.html"><img src="assets/img/sidebar/icon-2.png"
+                                    alt="icon"><span>Drivers Details</span></a>
+                        </li>
+                        <li>
+                            <a href="passanger-details.html"><img src="assets/img/sidebar/icon-4.png"
+                                    alt="icon"><span>Passangers History</span></a>
+                        </li>
+                        <li>
+                            <a href="destination.html.html"><img src="assets/img/sidebar/church.png"
+                                    alt="icon"><span>Our Churches</span></a>
+                        </li>
+                        <li>
+                            <a href="notifications.html"><img src="assets/img/sidebar/icon-22.png" alt="icon"><span>Driver
+                                    Requiest</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /sidebar -->
+
+        <div class="page-wrapper"> <!-- content -->
+            <div class="content container-fluid">
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <h5 class="text-uppercase mb-0 mt-0 page-title">Passanger details</h5>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row staff-grid-row">
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget" onclick="window.location.href='passangers-history.html'">
+                            <div class="profile-img">
+                                <a href="#"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile
+                                    No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total
+                                    Booking</a></h5>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget" onclick="window.location.href='passangers-history.html'">
+                            <div class="profile-img">
+                                <a href="#"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile
+                                    No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total
+                                    Booking</a></h5>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget" onclick="window.location.href='passangers-history.html'">
+                            <div class="profile-img">
+                                <a href="#"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile
+                                    No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total
+                                    Booking</a></h5>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget" onclick="window.location.href='passangers-history.html'">
+                            <div class="profile-img">
+                                <a href="#"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile
+                                    No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total
+                                    Booking</a></h5>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget" onclick="window.location.href='passangers-history.html'">
+                            <div class="profile-img">
+                                <a href="#"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile
+                                    No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total
+                                    Booking</a></h5>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget" onclick="window.location.href='passangers-history.html'">
+                            <div class="profile-img">
+                                <a href="#"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile
+                                    No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total
+                                    Booking</a></h5>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget" onclick="window.location.href='passangers-history.html'">
+                            <div class="profile-img">
+                                <a href="#"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile
+                                    No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total
+                                    Booking</a></h5>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget" onclick="window.location.href='passangers-history.html'">
+                            <div class="profile-img">
+                                <a href="#"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a
+                                    href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile
+                                    No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total
+                                    Booking</a></h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="notification-box">
+                    <div class="msg-sidebar notifications msg-noti">
+                        <div class="topnav-dropdown-header">
+                            <span>Messages</span>
+                        </div>
+                        <div class="drop-scroll msg-list-scroll">
+                            <ul class="list-box">
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">R</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Richard Miles </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item new-message">
+                                            <div class="list-left">
+                                                <span class="avatar">R</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Ruth C. Gault</span>
+                                                <span class="message-time">1 Aug</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">T</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Tarah Shropshire </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">M</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Mike Litorus</span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">C</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Catherine Manseau </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">D</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Domenic Houston </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">B</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Buster Wigton </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">R</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Rolland Webber </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">C</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author"> Claire Mapes </span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">M</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Melita Faucher</span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">J</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Jeffery Lalor</span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">L</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Loren Gatlin</span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="chat.html">
+                                        <div class="list-item">
+                                            <div class="list-left">
+                                                <span class="avatar">T</span>
+                                            </div>
+                                            <div class="list-body">
+                                                <span class="message-author">Tarah Shropshire</span>
+                                                <span class="message-time">12:28 AM</span>
+                                                <div class="clearfix"></div>
+                                                <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="chat.html">See all messages</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="delete_employee" class="modal" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-md">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Delete Employee</h4>
+                    </div>
+                    <form>
+                        <div class="modal-body">
+                            <p>Are you sure want to delete this?</p>
+                            <div class="m-t-20"> <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slimscroll -->
+    <script src="assets/js/jquery.slimscroll.js"></script>
+
+    <!-- select2 -->
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+
+    <!-- custom JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

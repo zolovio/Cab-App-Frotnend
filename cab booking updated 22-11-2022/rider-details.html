@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MONTREAL-rider-details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+
+    <!-- MAin CSs -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header start -->
+        <div class="header-outer">
+            <div class="header">
+                <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fas fa-bars"
+                        aria-hidden="true"></i></a>
+
+                <a id="toggle_btn" class="float-left" href="javascript:void(0);">
+                    <img src="assets/img/sidebar/icon-21.png" alt="">
+                </a>
+                <!-- Search-->
+                <ul class="nav float-left">
+
+                    <li>
+                        <a href="index.html" class="mobile-logo d-md-block d-lg-none d-block"><img
+                                src="assets/logo/logo_mtl.png" alt="" width="30" height="30"></a>
+                    </li>
+                </ul>
+                <!--/Search-->
+
+                <ul class="nav user-menu float-right">
+
+                    <li class="nav-item dropdown has-arrow">
+                        <a href="#" class=" nav-link user-link" data-toggle="dropdown">
+                            <span class="user-img"><img class="rounded-circle" src="assets/img/user-06.jpg" width="30"
+                                    alt="Admin">
+                                <span class="status online"></span></span>
+                            <span>Admin</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="my-profile.html">My Profile</a>
+                            <a class="dropdown-item" href="login.html">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="dropdown mobile-user-menu float-right"> <!-- mobile menu -->
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
+                            class="fas fa-ellipsis-v"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="my-profile.html">My Profile</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Header -->
+
+        <!-- sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <div class="header-left">
+                        <a href="index.html" class="logo">
+                            <img src="assets/logo/logo_mtl.png" width="40" height="40" alt="">
+                            <span class="text-uppercase">montreal</span>
+                        </a>
+                    </div>
+                    <ul class="sidebar-ul">
+                        <li class="menu-title">Menu</li>
+                        <li class="active">
+                            <a href="index.html"><img src="assets/img/sidebar/icon-1.png"
+                                    alt="icon"><span>Dashboard</span></a>
+                        </li>
+                        <li>
+                            <a href="driver-details.html"><img src="assets/img/sidebar/icon-2.png"
+                                    alt="icon"><span>Drivers Details</span></a>
+                        </li>
+                        <li>
+                            <a href="passanger-details.html"><img src="assets/img/sidebar/icon-4.png"
+                                    alt="icon"><span>Passangers History</span></a>
+                        </li>
+                        <li>
+                            <a href="destination.html.html"><img src="assets/img/sidebar/church.png"
+                                    alt="icon"><span>Our Churches</span></a>
+                        </li>
+                        <li>
+                            <a href="notifications.html"><img src="assets/img/sidebar/icon-22.png" alt="icon"><span>Driver
+                                    Requiest</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /sidebar -->
+
+        <div class="page-wrapper"> <!-- content -->
+            <div class="content container-fluid">
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <h5 class="text-uppercase mb-0 mt-0 page-title">Driver Profile</h5>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-sm-7">
+                        <h4 class="page-title">My Profile</h4>
+                    </div>
+                    <div class="col-sm-12 text-right m-b-30">
+                        <a href="edit-profile.html" class="btn btn-danger btn-rounded">Block Driver</a>
+                      
+
+
+                    </div>
+                </div> -->
+                <div class="card-box m-b-0">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="profile-view">
+                                <div class="profile-img-wrap">
+                                    <div class="profile-img">
+                                        <a href="" class="wali1"><img class="avatar" src="assets/img/user.jpg"
+                                                alt=""></a>
+
+                                    </div>
+                                    <style>
+                                        .wali1::after {
+                                            content: 'Verified';
+
+
+                                        }
+
+                                        .wali1::before {
+                                            content: 'Un-Verified';
+                                            display: none;
+                                        }
+                                    </style>
+                                </div>
+                                <div class="profile-basic">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="profile-info-left">
+                                                <h3 class="user-name m-t-0">Jeffrey M. Wong</h3>
+                                                <div class="staff-id">License NO : CLT-0001</div>
+                                                <div class="staff-id">Password : 1133124332</div>
+                                                <div class="staff-id">Date Of Birth : 3-2-1996</div>
+                                                <div class="staff-id">Car Number : UP 32-DB-7214</div>
+                                                <div class="staff-msg">
+                                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                                        <button type="button" class="btn btn-primary">Verify</button>
+
+                                                        <button type="button" class="btn btn-danger">Deny</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <ul class="personal-info">
+                                                <li>
+                                                    <span class="title">Phone:</span>
+                                                    <span class="text"><a href="">973-584-58700</a></span>
+                                                </li>
+                                                <li>
+                                                    <span class="title">Email:</span>
+                                                    <span class="text"><a href="">barrycuda@example.com</a></span>
+                                                </li>
+
+                                                <li>
+                                                    <span class="title">Address:</span>
+                                                    <span class="text">5754 Airport Rd, Coosada, AL, 36020</span>
+                                                </li>
+                                                <li>
+                                                    <span class="title">Gender:</span>
+                                                    <span class="text">Male</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- license photo start-->
+            <div class="content container-fluid">
+                <div class="text-center mb-0 border-bottom">
+                    <h2>License Details</h2>
+                </div>
+                <div class="row border-bottom">
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-12 p-5 text-center">
+                        <h4>FRONT SIDE</h4>
+                        <img src="https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/telangana-driving-licence.jpg"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-12 p-5 text-center">
+                        <h4>BACK SIDE</h4>
+                        <img src="https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/telangana-driving-licence.jpg"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-12 lio">
+                        <h3>License NO :</h3>
+                    </div>
+                </div>
+                <style>
+                    .lio {
+                        margin-left: 33px;
+                        margin-top: -40px;
+                    }
+
+                    .car-name {
+                        margin-left: 11rem;
+                    }
+                </style>
+
+            </div>
+            <!-- license photo end -->
+
+            <!-- car photo start-->
+            <div class="content container-fluid">
+                <div class="text-center mb-0 border-bottom">
+                    <h2>Car Details</h2>
+                </div>
+                <div class="row border-bottom justify-content-around my-5">
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-10 col-12 p-5 border shadow text-center">
+                        <h4>CAR PICK</h4>
+                        <img src="data:image/jpeg;base64,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"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-10 col-12 p-5 border shadow text-center">
+                        <h4>NUMBER PLATE</h4>
+                        <img src="data:image/png;base64,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"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-12 m-t-15 car-name">
+                        <div class="card" style="width:30%">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Car Name :</li>
+                                <li class="list-group-item">Car Color :</li>
+                                <li class="list-group-item">Car NO :</li>
+                                <li class="list-group-item">Car Model :</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <style>
+
+                </style>
+
+            </div>
+            <!-- car photo end -->
+            <!--tabs start  -->
+            <!-- <div class="content container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">ACTIVE</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">UP-COMMING</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">PREVIOUS</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="content container-fluid">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">TRIP ID :</li>
+                                <li class="list-group-item">STATUS</li>
+                              </ul>
+                              <div id="accordion">
+                                <div class="card">
+                                  <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        PASSANGER #1
+                                      </button>
+                                    </h5>
+                                  </div>
+                              
+                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                       
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        PASSANGER #2
+                                      </button>
+                                    </h5>
+                                  </div>
+                                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        PASSANGER #3
+                                      </button>
+                                    </h5>
+                                  </div>
+                                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                      </div>
+                </div>
+            </div>
+        </div> -->
+            <!-- tabs end -->
+
+
+
+
+            <!-- <div class="content container-fluid">
+               
+              <div class="card-box m-b-0">
+                  <div class="row">
+                      <div class="col-md-12">
+                       
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="text-bold card-title">Status</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered m-b-0">
+                                            <thead class="thead-light">
+                                                <tr>
+                                                    <th>Active</th>
+                                                    <th>Upcoming</th>
+                                                    <th>Previous</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>John</td>
+                                                    <td>Doe</td>
+                                                    <td>john@example.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mary</td>
+                                                    <td>Moe</td>
+                                                    <td>mary@example.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>July</td>
+                                                    <td>Dooley</td>
+                                                    <td>july@example.com</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                      </div>
+                      <div class="col-md-12">
+                       
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="text-bold card-title">More Details</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered m-b-0">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th>S.NO</th>
+                                                <th>Trip Date</th>
+                                                <th>No Passangers</th>
+                                                <th>Start Time</th>
+                                                <th>End Time</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>John</td>
+                                                <td>Doe</td>
+                                                <td>john@example.com</td>
+                                                <td>Doe</td>
+                                                <td>john@example.com</td>
+                                            </tr>
+                                       
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                   
+                  </div>
+                  
+                  </div>
+              </div>
+            
+              <div class="container">
+                <div class="text-uppercase text-center m-t-15">
+                    <h3>Passanger History</h3>
+                </div>
+                <div class="row staff-grid-row m-t-20">
+              
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget">
+                           
+                            <div class="profile-img">
+                                <a href="profile.html"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <div class="dropdown profile-action">
+                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="edit-teacher.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fas fa-trash-alt m-r-5"></i> Delete</a>
+                                </div>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total Booking</a></h5>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget">
+                            <div class="profile-img">
+                                <a href="profile.html"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <div class="dropdown profile-action">
+                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="edit-teacher.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fas fa-trash-alt m-r-5"></i> Delete</a>
+                                </div>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total Booking</a></h5>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget">
+                            <div class="profile-img">
+                                <a href="profile.html"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <div class="dropdown profile-action">
+                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="edit-teacher.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fas fa-trash-alt m-r-5"></i> Delete</a>
+                                </div>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total Booking</a></h5>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget">
+                            <div class="profile-img">
+                                <a href="profile.html"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <div class="dropdown profile-action">
+                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="edit-teacher.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fas fa-trash-alt m-r-5"></i> Delete</a>
+                                </div>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total Booking</a></h5>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget">
+                            <div class="profile-img">
+                                <a href="profile.html"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <div class="dropdown profile-action">
+                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="edit-teacher.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fas fa-trash-alt m-r-5"></i> Delete</a>
+                                </div>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total Booking</a></h5>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget">
+                            <div class="profile-img">
+                                <a href="profile.html"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <div class="dropdown profile-action">
+                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="edit-teacher.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fas fa-trash-alt m-r-5"></i> Delete</a>
+                                </div>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total Booking</a></h5>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget">
+                            <div class="profile-img">
+                                <a href="profile.html"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <div class="dropdown profile-action">
+                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="edit-teacher.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fas fa-trash-alt m-r-5"></i> Delete</a>
+                                </div>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total Booking</a></h5>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
+                        <div class="profile-widget">
+                            <div class="profile-img">
+                                <a href="profile.html"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                            </div>
+                            <div class="dropdown profile-action">
+                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="edit-teacher.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_employee"><i class="fas fa-trash-alt m-r-5"></i> Delete</a>
+                                </div>
+                            </div>
+                            <h5 class="user-name m-t-50 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Name</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Email</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Mobile No</a></h5>
+                            <h5 class="user-name m-t-10 m-b-0 text-ellipsis border-bottom"><a href="profile.html">Total Booking</a></h5>
+                            
+                        </div>
+                    </div>
+                 
+                  
+                </div>
+                   <!-- passangers card end -->
+        </div>
+
+    </div>
+    <div class="notification-box">
+        <div class="msg-sidebar notifications msg-noti">
+            <div class="topnav-dropdown-header">
+                <span>Messages</span>
+            </div>
+            <div class="drop-scroll msg-list-scroll">
+                <ul class="list-box">
+                    <li>
+                        <a href="chat.html">
+                            <div class="list-item">
+                                <div class="list-left">
+                                    <span class="avatar">R</span>
+                                </div>
+                                <div class="list-body">
+                                    <span class="message-author">Richard Miles </span>
+                                    <span class="message-time">12:28 AM</span>
+                                    <div class="clearfix"></div>
+                                    <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="list-item new-message">
+                                <div class="list-left">
+                                    <span class="avatar">J</span>
+                                </div>
+                                <div class="list-body">
+                                    <span class="message-author">Ruth C. Gault</span>
+                                    <span class="message-time">1 Aug</span>
+                                    <div class="clearfix"></div>
+                                    <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="list-item">
+                                <div class="list-left">
+                                    <span class="avatar">T</span>
+                                </div>
+                                <div class="list-body">
+                                    <span class="message-author"> Tarah Shropshire </span>
+                                    <span class="message-time">12:28 AM</span>
+                                    <div class="clearfix"></div>
+                                    <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="list-item">
+                                <div class="list-left">
+                                    <span class="avatar">M</span>
+                                </div>
+                                <div class="list-body">
+                                    <span class="message-author">Mike Litorus</span>
+                                    <span class="message-time">12:28 AM</span>
+                                    <div class="clearfix"></div>
+                                    <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="list-item">
+                                <div class="list-left">
+                                    <span class="avatar">C</span>
+                                </div>
+                                <div class="list-body">
+                                    <span class="message-author"> Catherine Manseau </span>
+                                    <span class="message-time">12:28 AM</span>
+                                    <div class="clearfix"></div>
+                                    <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="list-item">
+                                <div class="list-left">
+                                    <span class="avatar">D</span>
+                                </div>
+                                <div class="list-body">
+                                    <span class="message-author"> Domenic Houston </span>
+                                    <span class="message-time">12:28 AM</span>
+                                    <div class="clearfix"></div>
+                                    <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="list-item">
+                                <div class="list-left">
+                                    <span class="avatar">B</span>
+                                </div>
+                                <div class="list-body">
+                                    <span class="message-author"> Buster Wigton </span>
+                                    <span class="message-time">12:28 AM</span>
+                                    <div class="clearfix"></div>
+                                    <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="list-item">
+                                <div class="list-left">
+                                    <span class="avatar">R</span>
+                                </div>
+                                <div class="list-body">
+                                    <span class="message-author"> Rolland Webber </span>
+                                    <span class="message-time">12:28 AM</span>
+                                    <div class="clearfix"></div>
+                                    <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="list-item">
+                                <div class="list-left">
+                                    <span class="avatar">C</span>
+                                </div>
+                                <div class="list-body">
+                                    <span class="message-author"> Claire Mapes </span>
+                                    <span class="message-time">12:28 AM</span>
+                                    <div class="clearfix"></div>
+                                    <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="list-item">
+                                <div class="list-left">
+                                    <span class="avatar">M</span>
+                                </div>
+                                <div class="list-body">
+                                    <span class="message-author">Melita Faucher</span>
+                                    <span class="message-time">12:28 AM</span>
+                                    <div class="clearfix"></div>
+                                    <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="list-item">
+                                <div class="list-left">
+                                    <span class="avatar">J</span>
+                                </div>
+                                <div class="list-body">
+                                    <span class="message-author">Jeffery Lalor</span>
+                                    <span class="message-time">12:28 AM</span>
+                                    <div class="clearfix"></div>
+                                    <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="list-item">
+                                <div class="list-left">
+                                    <span class="avatar">L</span>
+                                </div>
+                                <div class="list-body">
+                                    <span class="message-author">Loren Gatlin</span>
+                                    <span class="message-time">12:28 AM</span>
+                                    <div class="clearfix"></div>
+                                    <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="list-item">
+                                <div class="list-left">
+                                    <span class="avatar">T</span>
+                                </div>
+                                <div class="list-body">
+                                    <span class="message-author">Tarah Shropshire</span>
+                                    <span class="message-time">12:28 AM</span>
+                                    <div class="clearfix"></div>
+                                    <span class="message-content">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="topnav-dropdown-footer">
+                <a href="chat.html">See all messages</a>
+            </div>
+        </div>
+    </div> -->
+    </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slimscroll -->
+    <script src="assets/js/jquery.slimscroll.js"></script>
+
+    <!-- custom JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
